@@ -2,7 +2,7 @@
 i = 1
 while(i < 5):
     i=i+1
-    pri
+    print i
 """    
 string= " himani , princy , kavi"
 i=-1
