@@ -32,3 +32,18 @@ c = cap3("hjgj","hgdv ga")
 print c
 print cap5(fruit="grapes", name="Prashant", surname = "tiwari")
 
+def toList(a,b,c,d,e):
+	li = [a,b,c,d,e]
+	return li
+
+
+print toList(1,2,3,4,5)
+
+def printList(l):
+	for i in l:
+		print "value is : ", i
+
+
+printList(toList(1,2,3,4,5))
+
+
