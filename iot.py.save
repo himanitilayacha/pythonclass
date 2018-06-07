@@ -1,0 +1,24 @@
+import urllib2 as browser
+import requests
+import RPi.GPIO as G
+G.setwarnings(False)
+G.setmode(G.BCM)
+G.setup(18,G.OUT)
+led = 18
+
+#content = browser.urlopen("http://class.aarmontech.com/3/bulb.txt")
+#r = requests.get("https://class.aarmontech.com/3/bulb.txt")
+try:
+	while(1):
+		response = requests("https://google.com")
+		print(dir(response))
+		#content = browser.urlopen("http://class.aarmontech.com/3/bulb.txt")
+		if r.read()=='1':
+			print "glow"
+			G.output(led,1)
+		else:
+			print "not glow"
+			G.output(led,0)
+		r = requests.get("https://class.aarmontech.com/3/bulb.txt")
+except:
+	G.cleanup()
